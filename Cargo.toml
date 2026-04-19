@@ -1,0 +1,19 @@
+[package]
+name = "mdbx4rs"
+version = "0.6.6"
+edition = "2024"
+license = "Apache-2.0"
+description = "Wrapper around libmdbx-rs with C-aligned naming, gap-filling FFI, and convenience types."
+keywords = ["MDBX", "database", "KV-store", "libmdbx"]
+categories = ["database"]
+
+[lib]
+name = "mdbx4rs"
+
+[dependencies]
+libmdbx = "0.6.6"
+ffi = { package = "mdbx-sys", version = "13.11.0" }
+libc = "0.2"
+
+[dev-dependencies]
+tempfile = "3"
